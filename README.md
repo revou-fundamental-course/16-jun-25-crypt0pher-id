@@ -1,5 +1,11 @@
 # 📐 Kalkulator Segitiga
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![HTML](https://img.shields.io/badge/HTML5-orange?logo=html5)		
+![CSS](https://img.shields.io/badge/CSS3-blue?logo=css3)		
+![JS](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
+[![Live Demo](https://img.shields.io/badge/View-Demo-green?logo=github)](https://revou-fundamental-course.github.io/16-jun-25-crypt0pher-id/)	
+
 Aplikasi web sederhana untuk menghitung luas dan keliling segitiga secara interaktif, menggunakan HTML, CSS, dan JavaScript.
 
 
@@ -41,3 +47,9 @@ https://revou-fundamental-course.github.io/16-jun-25-crypt0pher-id/
 - 🎨 CSS3 (tanpa framework)
 
 - ⚙️ JavaScript DOM
+
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.  
+Silakan lihat file [LICENSE](LICENSE) untuk informasi lengkap.
