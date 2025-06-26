@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator Segitiga</h1>
+        <p>Pilih jenis perhitungan yang ingin dilakukan</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <label for="pilih">Pilih Perhitungan:</label>
+            <select id="pilih">
+                <option value="luas">Luas Segitiga</option>
+                <option value="keliling">Keliling Segitiga</option>
+            </select>
+        </div>
+
+        <div id="penjelasan-luas" class="info-box">
+            <div class="image-box">
+                <img src="assets/Segitiga.png" alt="Gambar Segitiga">
+            </div>
+            <div class="penjelasan">
+                <h3>Rumus Luas Segitiga:</h3>
+                <p><strong>L = 1/2 × a × t</strong></p>
+                <p>Dengan keterangan:</p>
+                <ul>
+                    <li><strong>L</strong> = Luas</li>
+                    <li><strong>a</strong> = Panjang alas</li>
+                    <li><strong>t</strong> = Tinggi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="penjelasan-keliling" class="info-box" style="display: none;">
+            <div class="image-box">
+                <img src="assets/Segitiga.png" alt="Gambar Segitiga">
+            </div>
+            <div class="penjelasan">
+                <h3>Rumus Keliling Segitiga:</h3>
+                <p><strong>K = A + B + C</strong></p>
+                <p>Dengan keterangan:</p>
+                <ul>
+                    <li><strong>K</strong> = Keliling</li>
+                    <li><strong>A</strong> = Sisi A</li>
+                    <li><strong>B</strong> = Sisi B</li>
+                    <li><strong>C</strong> = Sisi C</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <form id="form-luas" class="form-segitiga">
+                <h2>Hitung Luas</h2>
+                <input type="number" id="alas" placeholder="Alas (cm)" required>
+                <input type="number" id="tinggi" placeholder="Tinggi (cm)" required>
+                <div class="button-group">
+                    <button type="submit">Hitung</button>
+                    <button type="button" id="reset-luas">Reset</button>
+                </div>
+                <div id="hasil-luas" class="hasil-box"></div>
+                <div id="cara-luas" class="cara-box"></div>
+            </form>
+
+            <form id="form-keliling" class="form-segitiga" style="display:none">
+                <h2>Hitung Keliling</h2>
+                <input type="number" id="sisi1" placeholder="Sisi A (cm)" required>
+                <input type="number" id="sisi2" placeholder="Sisi B (cm)" required>
+                <input type="number" id="sisi3" placeholder="Sisi C (cm)" required>
+                <div class="button-group">
+                    <button type="submit">Hitung</button>
+                    <button type="button" id="reset-keliling">Reset</button>
+                </div>
+                <div id="hasil-keliling" class="hasil-box"></div>
+                <div id="cara-keliling" class="cara-box"></div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
